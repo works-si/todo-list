@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i");
 .clear:before, .clear:after {
   content: ' ';
   display: table; }
@@ -14,14 +15,18 @@
 
 html {
   font-size: 62.5%;
-  background: radial-gradient(ellipse at center, #F7F6F0 0, #c2ba8c 80%, #b0a66b 100%); }
+  font-family: 'Ubuntu', sans-serif; }
 
 body {
   font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
   color: #444;
-  transition: all .4s .3s ease-in; }
+  transition: all .4s .3s ease-in;
+  font-family: 'Ubuntu', sans-serif; }
 
 body, html {
+  background-color: #ecf0f1;
+  width: 100%;
+  height: 100%;
   min-height: 100vh;
   overflow: hidden; }
 
@@ -400,6 +405,99 @@ textarea {
 .nav ul {
   list-style: none; }
 
+.main {
+  width: 100%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.login {
+  height: auto;
+  width: 40rem;
+  border: 1px solid #9faaab;
+  background: white;
+  box-shadow: -1px 2px 15px 1px rgba(0, 0, 0, 0.1); }
+
+.login_top {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #c3cfd0; }
+
+.login_title {
+  font-size: 4rem; }
+
+.login_form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 4rem; }
+
+.login_button {
+  padding-right: 4rem; }
+
+.login_info {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 4rem 0;
+  font-size: 15px; }
+  .login_info a {
+    color: #7f8c8d; }
+
+.button_content {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.button {
+  cursor: pointer;
+  background-color: #c3cfd0;
+  color: #7f8c8d;
+  border: 1px solid #7f8c8d;
+  text-transform: uppercase;
+  width: 10rem;
+  height: 4rem;
+  transition: .2s ease-in-out; }
+  .button:hover {
+    filter: grayscale(90%); }
+
+.input {
+  background-color: transparent;
+  margin: 1rem;
+  border: none;
+  border-bottom: 1px solid #9faaab;
+  outline: none;
+  color: #606767;
+  padding: .5rem;
+  font-size: 18px;
+  width: 100%; }
+
+.title {
+  font-weight: 400;
+  color: #7f8c8d;
+  margin: 0; }
+
+.subtitle {
+  font-weight: 400;
+  color: #7f8c8d;
+  margin: 0; }
+
 @font-face {
   font-family: 'Font-Name';
   src: url("../fonts/font-name.eot");
@@ -426,6 +524,10 @@ textarea {
   background: #333;
   color: #fff;
   text-shadow: none; }
+
+@media only screen and (max-width: 480px) {
+  .login {
+    width: 30rem; } }
 
 @media print {
   * {
