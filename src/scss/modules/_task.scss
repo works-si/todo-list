@@ -1,0 +1,10 @@
+.task {display:flex;align-items: center; justify-content: space-between; background-color: $color_primary-2; padding: .5rem 2rem; border-bottom: 1px solid $color_secundary;border-bottom-style: dashed; color:$color_primary-3;
+  &.done { color: $color_secundary-2;
+    p {text-decoration: line-through;}
+    .check {border-right: 1px solid $color_secundary-2;}
+  }
+}
+.task_actions { display: flex;
+  .check {border-right: 1px solid $color_primary-3; padding: .5rem 2rem; cursor: pointer;}
+  .delete {padding: .5rem 2rem; cursor: pointer;}
+}

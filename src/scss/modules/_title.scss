@@ -1,2 +1,6 @@
-.title { font-weight: 400; color: $color_primary; margin:0}
+.title { font-weight: 400; color: $color_primary; margin:0;
+  &.home_title {font-weight: 200;
+    strong {font-weight: 500}
+  }
+}
 .subtitle {font-weight: 400; color: $color_primary; margin:0}

@@ -1,4 +1,4 @@
 .button_content {width: 100%; display: flex; justify-content: flex-end;}
 .button {cursor:pointer;background-color: $color_primary-2; color: $color_primary; border: 1px solid $color_primary; text-transform: uppercase; width: 10rem; height: 4rem; transition: .2s ease-in-out;
-  &:hover {filter: grayscale(90%)}
+  &:hover {opacity: .9;}
 }
