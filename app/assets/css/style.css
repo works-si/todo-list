@@ -446,6 +446,8 @@ textarea {
   -ms-flex-align: center;
       align-items: center;
   padding: 4rem; }
+  .login_form.register_form {
+    padding: 1rem 3rem; }
 
 .login_button {
   padding-right: 4rem; }
@@ -490,12 +492,12 @@ textarea {
 
 .home_input-content {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: relative; }
   .home_input-content i {
     position: absolute;
     right: 0;
-    margin-top: 1rem;
-    padding-left: 2rem;
+    margin-top: 2rem;
     font-size: 2rem;
     cursor: pointer;
     color: #7f8c8d; }
