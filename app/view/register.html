@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="./assets/css/style.min.css" rel="stylesheet">
+  <title>Cadastro</title>
+</head>
+<body>
+  <main class="main" role="main">
+    <div class="login ">
+      <div class="login_top">
+        <h1 class="title login_title">todo<strong>list</strong></h1>
+        <h2 class="subtitle">Cadastro</h2>
+      </div>
+      <form class="login_form register_form" method="POST" action="#">
+        <input class="input" type="text" name="nome" placeholder="Nome">
+        <input class="input" type="email"  name="email" placeholder="E-mail">
+        <input class="input" type="text" name="cep" data-js="cep" placeholder="Cep">
+        <input class="input" type="text"  name="endereco" data-js="address" placeholder="Endereço">
+        <input class="input" type="text" name="telefone" placeholder="Telefone">
+        <input class="input" type="password" name="senha" placeholder="Senha">
+        <input class="input" type="password" name="c_senha" placeholder="Confirme sua senha">
+        <div class="button_content register_button">
+          <button class="button" type="submit" >Entrar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="./assets/js/axios.js"></script>
+  <script src="./assets/js/cep.js"></script>
+</body>
+</html>
