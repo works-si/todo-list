@@ -11,8 +11,6 @@
     <link href="//www.google-analytics.com" rel="dns-prefetch">
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
     <link href="assets/css/style.min.css" rel="stylesheet">
-
-    <script src="assets/components/modernizr/modernizr.js"></script>
   </head>
   <body>
     <main class="main" role="main">
@@ -21,18 +19,18 @@
           <h1 class="title login_title">todo<strong>list</strong></h1>
           <h2 class="subtitle">Login</h2>
         </div>
-        <form class="login_form">
-          <input class="input" type="text" placeholder="User">
-          <input class="input" type="text" placeholder="Senha">
+        <form class="login_form" method="POST">
+          <input class="input" name="email" type="text" placeholder="User">
+          <input class="input" type="text" name="password" placeholder="Senha">
+          <div class="button_content login_button">
+            <button class="button" type="submit">Entrar</button>
+          </div>
         </form>
-        <div class="button_content login_button">
-            <button class="button">Entrar</button>
-        </div>
+
         <div class="login_info">
           <a href="index.php?controller=user_controller&method=create_account">Não possui conta? Cadastre-se aqui.</a>
         </div>
       </div>
     </main>
-
   </body>
 </html>

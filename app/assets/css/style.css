@@ -502,6 +502,10 @@ textarea {
     cursor: pointer;
     color: #7f8c8d; }
 
+.all_tasks {
+  max-height: 230px;
+  overflow: auto; }
+
 .button_content {
   width: 100%;
   display: -ms-flexbox;

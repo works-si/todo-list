@@ -33,6 +33,30 @@
 			{
 				die ($e->getMessage());
 			}
-		}
+    }
+
+    function logar($user)
+    {
+        $sql = "SELECT * FROM users WHERE email = ? AND password = ? ";
+
+        try
+        {
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindValue(1, $user->getEmail());
+            $stmt->bindValue(2, $user->getPassword());
+            $ret = $stmt->execute();
+            $this->db = null;
+            if(!$ret)
+            {
+                die("Erro ao logar.");
+            } else {
+                return $retorno = $stmt->fetchAll(PDO::FETCH_OBJ);
+            }
+        }
+        catch (PDOException $e)
+        {
+            die ($e->getMessage());
+        }
+    }
   }
 ?>

@@ -24,6 +24,10 @@
       return $this->name;
     }
 
+    function getIduser() {
+      return $this->iduser;
+    }
+
     function getEmail() {
       return $this->email;
     }
